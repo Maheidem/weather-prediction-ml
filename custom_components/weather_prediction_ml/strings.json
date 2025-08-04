@@ -1,0 +1,41 @@
+{
+  "title": "Weather Prediction ML",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Weather Prediction ML",
+        "description": "Set up machine learning weather prediction using your sensor data.",
+        "data": {
+          "temperature_sensor": "Temperature Sensor",
+          "humidity_sensor": "Humidity Sensor",
+          "pressure_sensor": "Pressure Sensor",
+          "update_interval": "Update Interval (seconds)",
+          "auto_retrain": "Enable Automatic Model Retraining",
+          "retrain_schedule": "Retraining Schedule (cron expression)"
+        }
+      }
+    },
+    "error": {
+      "unknown": "Unexpected error",
+      "temperature_sensor": "Temperature sensor not found",
+      "humidity_sensor": "Humidity sensor not found",
+      "pressure_sensor": "Pressure sensor not found"
+    },
+    "abort": {
+      "already_configured": "This sensor combination is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Weather Prediction ML Options",
+        "description": "Adjust the settings for weather prediction.",
+        "data": {
+          "update_interval": "Update Interval (seconds)",
+          "auto_retrain": "Enable Automatic Model Retraining",
+          "retrain_schedule": "Retraining Schedule (cron expression)"
+        }
+      }
+    }
+  }
+}

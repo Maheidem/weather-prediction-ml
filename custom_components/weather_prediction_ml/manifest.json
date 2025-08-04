@@ -1,0 +1,17 @@
+{
+  "domain": "weather_prediction_ml",
+  "name": "Weather Prediction ML",
+  "codeowners": ["@maheidem"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/maheidem/weather-prediction-ml",
+  "iot_class": "local_polling",
+  "requirements": [
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "scikit-learn>=1.0.0",
+    "xgboost>=1.5.0",
+    "joblib>=1.0.0"
+  ],
+  "version": "1.0.0"
+}

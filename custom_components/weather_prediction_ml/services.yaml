@@ -1,0 +1,26 @@
+predict:
+  name: Trigger Prediction
+  description: Manually trigger a weather prediction update
+  fields: {}
+
+retrain_model:
+  name: Retrain Model
+  description: Retrain the weather prediction model with recent data
+  fields:
+    days_back:
+      name: Days Back
+      description: Number of days of historical data to use for training
+      required: false
+      default: 30
+      example: 30
+      selector:
+        number:
+          min: 7
+          max: 365
+          step: 1
+          unit_of_measurement: days
+
+get_diagnostics:
+  name: Get Diagnostics
+  description: Get diagnostic information about the weather prediction model
+  fields: {}
